@@ -1,0 +1,236 @@
+body{
+	font-family: montserrat;
+}
+
+.login-form {
+	width: 360px;
+	background-color: white;
+	height: 600px;
+	padding: 40px 40px;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -45%);
+}
+
+.login-form h1{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.txtb {
+	border-bottom: 2px solid #adadad;
+	position: relative;
+	margin: 30px 0;
+}
+
+.txtb input{
+	font-size: 15px;
+	color: #333;
+	width: 100%;
+
+	outline: none;
+	border: none;
+	background: none;
+
+	padding: 0 5px;
+
+	height: 40px;
+}
+
+.txtb span::before{
+	content: attr(data-placeholder);
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	z-index: -1;
+	transition: 400ms;
+}
+
+.txtb span::after{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	transform: translate(-280px, 40px);
+	background: #2980b9;
+	transition: 400ms;
+}
+
+.focus + span::before {
+	top: -5px;
+	color: gold;
+}
+
+.focus + span::after {
+	width: 100%;
+}
+
+.logbtn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border: none;
+	background: #2980b9;
+	
+	color: gold;
+	font-size: 1.1em;
+
+	cursor: pointer;
+	outline: none;
+	opacity: 0.85;
+}
+
+.logbtn:hover {
+	opacity: 1;
+}
+
+.navbar-light , .navbar-nav .active > .nav-link , .navbar , .navbar .navbar-brand ,
+.navbar .navbar-toggler , .navbar .navbar-nav .nav-link ,
+ .navbar .navbar-nav .active , .navbar .navbar-nav .nav-link .active , 
+ .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav
+  .nav-link.active, .navbar-light .navbar-nav .nav-link.show,
+   .navbar-light .navbar-nav .show>.nav-link {
+	background-color: #2980b9;
+	color: white;
+	transition: all ease-in-out 150ms;
+	position: sticky;
+	top: 0;
+	z-index: 1101;
+}
+
+.navbar-light , .navbar-nav .active > .nav-link , .navbar , 
+.navbar .navbar-brand:hover , .navbar .navbar-toggler , .navbar .navbar-nav 
+.nav-link:hover , .navbar .navbar-nav .active:hover , .navbar .navbar-nav 
+.nav-link .active:hover , .navbar-light .navbar-nav .active>.nav-link:hover,
+ .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav 
+ .nav-link.show:hover, .navbar-light .navbar-nav .show>.nav-link:hover {
+   	color: gold;
+   }
+
+.navbar-brand , .nav-link {
+	padding: 8px 10px;
+	font-weight: bold;
+}
+
+.navbar-brand {
+	font-size: 1.25em;
+	font-weight: bolder;
+	color: gold!important;
+}
+
+.nav-link {
+	font-size: 1.1em;
+}
+
+/* viewport height sections */
+.section {
+	height: 80vh;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.box {
+	background-color: #fff;
+	width: 400px;
+	padding: 10px;
+	margin-bottom: 20px;
+	display: block;
+	margin: auto;
+	box-shadow: 8px 8px 2px 1px rgba(0,0,0,.3);
+	transition: box-shadow 200ms ease-in-out ;
+}
+
+.box:hover , .box:focus{
+	box-shadow:20px 20px 2px 1px rgba(0,0,0,.3);
+}
+
+.box .box-head {
+	background-color: #2980b9;
+	width: 100%;
+	color: gold;
+	transition: box-shadow 500ms;
+}
+
+.box .box-head:hover {
+	box-shadow: 0px 0px 5px 1px gold;
+}
+
+.box .box-head p{
+	text-align: center;
+	display: inline-block;
+	font-weight: bolder;
+	font-size: 1.2em;
+	margin: 20px;
+}
+
+.box .box-head .heart{
+	float: right;
+	cursor: pointer;
+	margin: 18px;
+	display: inline;
+	color: rgba(0,0,0,.3);
+}
+
+.box-button {
+	width: 100%;
+	padding: 10px;
+	background: #2980b9;
+	color: #fff;
+	font-weight: bold;
+	transform: translateY(-5px);
+	text-transform: uppercase;
+}
+
+.red {
+	color: red;
+}
+
+/* Container for all drpdown buttons (needed because of 
+	display:grid; on my .section)*/	
+.dropdown-container {
+	text-align: center;
+}
+
+
+.job-appl {
+	background: white;
+	border-radius: 15px;
+	width: 300px;
+	height: 170px;
+	display: block;
+	margin: auto;
+}
+
+.job-appl .job-title , .job-appl .job-title h2{
+	text-align: center;
+	font-weight: bolder;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.job-appl .job-buttons {
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.job-appl .job-buttons button {
+	height: 40px;
+	color: white;
+	border-radius: 5px;
+	padding: 10px 20px;
+	background-color: #2980b9;
+}
+
+.job-appl .job-buttons button:hover {
+	color: gold;
+}
+
+.button-holder{
+	text-align: center;
+}
+
